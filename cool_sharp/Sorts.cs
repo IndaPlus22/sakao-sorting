@@ -7,6 +7,8 @@ namespace cool_sharp
 {
     public class Sorts
     {
+        // change this value if you want to change timer in program
+        const double TIMER = 0.01;
         const int WIDTH = 800;
         const int HEIGHT = 480;
         const int BOX_HEIGHT = 10;
@@ -164,7 +166,7 @@ namespace cool_sharp
             DrawArray(positions);
 
             // waiting so i can see
-            Raylib.WaitTime(0.005);
+            Raylib.WaitTime(TIMER);
 
             Raylib.EndDrawing();
 
